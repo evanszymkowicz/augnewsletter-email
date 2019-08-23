@@ -1,8 +1,6 @@
-## Heroku Monthly Newsletter
+# augnewsletter-email
 
-
-
-### checklist:
+## checklist:
 
 </br>
 icons </br>
@@ -10,4 +8,3 @@ css reset </br>
 
 
 No flexbox gmail/outlook dont support
-# augnewsletter-email
