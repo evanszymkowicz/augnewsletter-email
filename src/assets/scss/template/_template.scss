@@ -1,59 +1,103 @@
-// These are the styles to make some of the templates look extra nice.
-// Feel free to remove these styles for production!
-
-// Body Styles 
 body,
-html, 
+html,
 .body {
-  background: #f3f3f3 !important;
+  background: $primary-color !important;
+  .wrapper-inner {
+    background: $primary-color; //come back to this for mobile
+  }
+}
+// src/partials/header.html
+.basic-header {
+  .view-in-browser {
+    padding-top: 15px;
+    .text-right {
+      color: $white;
+      font-size: 11.2px;
+    }
+    .heroku-logo {
+      height: auto !important;
+      width: 59px !important;
+      margin: 0 auto !important;
+      max-width: 100%;
+      text-align: center;
+      border: none;
+      clear: both;
+      display: block;
+    }
+  }
+  .text-center {
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    hyphens: none !important;
+    letter-spacing: 6px;
+    line-height: 1.5;
+    margin: 0 !important;
+    margin-bottom: 10px;
+    padding: 0 0 10px 0 !important;
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: inherit !important;
+  }
 }
 
-.container.header {
-  background: #f3f3f3;
-}
-
-.body-drip {
-  border-top: 8px solid #663399;
+// wrapper class body-content:
+.body-content {
+  .rounded-corners {
+    border-radius: 10px;
+    background: $white;
+    .headlines {
+      .text-center {
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 700;
+        hyphens: none !important;
+        letter-spacing: 5px;
+        line-height: 140%;
+        margin: 0 !important;
+        padding: 35px 0 17.5px 0 !important;
+        word-wrap: inherit !important;
+        //start page break
+        margin: 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #dbd9e5;
+        //end page break styling
+      }
+    }
+    .article {
+      .clickable-story {
+        .headline {
+          font-color: $secondary-color;
+        }
+      }
+    }
+  }
 }
 
 // Full Width Headers
-.header {
-  background: #8a8a8a;
-}
+// .header {
+//   background: #8a8a8a;
+// }
+//
+// .header .columns {
+//   padding-bottom: 0;
+// }
+//
+//
+//
+// .header .wrapper-inner {
+//   padding: 20px;
+// }
+//
+// .header .container {
+//   background: transparent;
+// }
 
-.header .columns {
-  padding-bottom: 0;
-}
-
-.header p {
-  color: #fff;
-  padding-top: 15px;
-}
-
-.header .wrapper-inner {
-  padding: 20px;
-}
-
-.header .container {
-  background: transparent;
-}
-
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
-}
-
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
-}
-
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
-}
-
-.wrapper.secondary {
-  background: #f3f3f3;
+.footer-primary {
+  .footer-purple {
+    .footer-content {
+      
+    }
+  }
 }
