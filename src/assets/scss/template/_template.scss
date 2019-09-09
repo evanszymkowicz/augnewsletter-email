@@ -1,30 +1,37 @@
+// .body,
 body,
-html,
-.body {
+html {
   background: $primary-color !important;
   .wrapper-inner {
     background: $primary-color; //come back to this for mobile
   }
 }
-// src/partials/header.html
-.basic-header {
-  .view-in-browser {
-    padding-top: 15px;
-    .text-right {
-      color: $white;
-      font-size: 11.2px;
-    }
-    .heroku-logo {
-      height: auto !important;
-      width: 59px !important;
-      margin: 0 auto !important;
-      max-width: 100%;
-      text-align: center;
-      border: none;
-      clear: both;
-      display: block;
-    }
+
+.header {
+  .wrapper-inner {
+    padding: 20px; /*controls the height of the header*/
   }
+  .wrapper.secondary {
+    background: #f3f3f3;
+  }
+  .container {
+    background: $primary-color;
+    width: 580px;
+  }
+
+  .logo {
+    width: 59px !important;
+    height: auto;
+    border: none;
+    margin: 0 auto!important !important;
+    max-width: 100%;
+    outline: 0;
+  }
+  .text-right {
+    color: $white;
+    font-size: 11.2px;
+  }
+
   .text-center {
     color: $white;
     font-size: 16px;
@@ -32,72 +39,106 @@ html,
     hyphens: none !important;
     letter-spacing: 6px;
     line-height: 1.5;
-    margin: 0 !important;
-    margin-bottom: 10px;
-    padding: 0 0 10px 0 !important;
+    margin: 0 10px !important;
+    // padding: 0 0 10px 0 !important;
     text-align: center;
     text-transform: uppercase;
+    // word-wrap: inherit !important;
+  }
+}
+
+.rounded-corners {
+	margin: 0 auto;
+	// background-color:#fefefe;
+	border-radius: 6px!important;
+	color:#3F3F44;
+	line-height:1.5;
+	padding-bottom:35px;
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:30px;
+	text-align:left;
+	width: 545px
+}
+.add-ons {
+
+}
+.headline {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: $secondary-color;
+}
+
+.section-title {
+  .text-center {
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 140%;
+    margin: 0 !important;
+    padding: 35px 0 17.5px 0 !important;
     word-wrap: inherit !important;
+    margin: 0 0 10px;     //start page break
+    border-bottom: 1px solid #dbd9e5; //end page break styling
   }
 }
 
-// wrapper class body-content:
-.body-content {
-  .rounded-corners {
-    border-radius: 10px;
-    background: $white;
-    .headlines {
-      .text-center {
-        color: $primary-color;
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: 700;
-        hyphens: none !important;
-        letter-spacing: 5px;
-        line-height: 140%;
-        margin: 0 !important;
-        padding: 35px 0 17.5px 0 !important;
-        word-wrap: inherit !important;
-        //start page break
-        margin: 0;
-        margin-bottom: 10px;
-        border-bottom: 1px solid #dbd9e5;
-        //end page break styling
-      }
-    }
-    .article {
-      .clickable-story {
-        .headline {
-          font-color: $secondary-color;
-        }
-      }
-    }
+.secondary-stories {
+  h6, a {
+    color: $secondary-color;
+    font-weight: 400;
+    font-size: 14px;
+    hyphens: none;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
   }
 }
 
-// Full Width Headers
-// .header {
-//   background: #8a8a8a;
-// }
-//
-// .header .columns {
-//   padding-bottom: 0;
-// }
-//
-//
-//
-// .header .wrapper-inner {
-//   padding: 20px;
-// }
-//
-// .header .container {
-//   background: transparent;
-// }
+.last-content {
+  href {
+    color: $secondary-color;
+  }
+}
 
-.footer-primary {
-  .footer-purple {
-    .footer-content {
-      
-    }
+.dates {
+  font-weight: bolder;
+}
+
+.footer {
+  .container {
+    background: $primary-color;
+  }
+  .footer-logo {
+    border: none;
+    clear: both;
+    display: block;
+    height: 46px;
+    margin:0 auto;
+    max-width: 100%;
+    outline: 0;
+    width: auto!important;
+  }
+}
+
+.small-hr {
+  background-color:#DBD9E5;
+  border:none;
+  border-width:0;
+  height: 1px;
+}
+
+
+
+.text-center {
+  color: $alert-color;
+  font-size: 11.2px;
+  a {
+    text-decoration: underline;
+    color: $alert-color;
   }
 }

@@ -20,14 +20,14 @@ $primary-color: #473a8f;
 $secondary-color: #408FEC;
 $success-color: #3adb76;
 $warning-color: #ffae00;
-$alert-color: #ec5840;
+$alert-color: #8a7ecb;
 $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $pre-color: #ff6908;
-$global-width: 580px;
+$global-width: 600px;
 $global-width-small: 95%;
 $global-gutter: 16px;
 $body-background: $light-gray;
@@ -58,8 +58,8 @@ $global-font-color: $black;
 $body-font-family: Helvetica, Arial, sans-serif;
 $global-font-weight: normal;
 $header-color: inherit;
-$global-line-height: 1.3;
-$global-font-size: 16px;
+$global-line-height: 1.5;
+$global-font-size: 14px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-font-weight;
@@ -119,7 +119,7 @@ $button-rounded: $global-rounded;
 // ----------
 
 $callout-background: $white;
-$callout-background-fade: 85%;
+$callout-background-fade: 100%;
 $callout-padding: 10px;
 $callout-margin-bottom: $global-margin;
 $callout-border: 1px solid darken($callout-background, 20%);
@@ -130,10 +130,10 @@ $callout-border-alert: 1px solid darken($alert-color, 20%);
 
 // 7. Menu
 // -------
-
-$menu-item-padding: 10px;
-$menu-item-gutter: 10px;
-$menu-item-color: $primary-color;
+//
+$menu-item-padding: 4px;
+$menu-item-gutter: 4px;
+$menu-item-color: $alert-color;
 
 // 8. Thumbnail
 // ------------

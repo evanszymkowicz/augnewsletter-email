@@ -1,22 +1,19 @@
 ---
 layout: index-layout
 subject: Securing Data, Going Fast, and the Magic of Tidying Active Record
+description: News from Heroku
 ---
 
 <!-- TODO: No purple background for the main content when on small screens -->
 <!-- TODO: Complete the template in standard inky before converting to data ready -->
 <!-- TODO: rss links in json data?-->
 
+{{> header}}
 
-<spacer size="16"></spacer>
+<wrapper>
 
-<container>
-
-	{{> header}}
-
-	<wrapper class="body-content">
 		<container class="rounded-corners">
-			<row class="headlines">
+			<row class="section-title">
 				<columns>
 					<p class="text-center">
 						headlines
@@ -24,12 +21,12 @@ subject: Securing Data, Going Fast, and the Magic of Tidying Active Record
 				</columns>
 			</row>
 			<!-- first article -->
-			<row class="article">
+			<row>
 				<columns>
-					<h5>
-						<a href=""> {{ article headline here }} &nbsp;→ </a>
-					</h5>
-					<span>{{ description }}</span>
+					<span class="headline">
+						<href="">why frequent maintenances are essential for secure heroku data services&nbsp;→</a>
+					</span>
+					<p>Learn how we roll out maintenances and updates to Heroku Postgres, Heroku Redis, and Apache Kafka on Heroku, so that your data stays safe, all with minimal disruption to your applications and users.</p>
 					<!-- </p> -->
 				</columns>
 			</row>
@@ -37,10 +34,10 @@ subject: Securing Data, Going Fast, and the Magic of Tidying Active Record
 			<!-- second article -->
 			<row class="article">
 				<columns>
-					<h5>
-						<a href=""> {{ article headline here }} &nbsp;→ </a>
-					</h5>
-					<span>{{ description }}</span>
+					<span class="headline">
+						<href="">[Technical Session] Going Fast Without Breaking Things&nbsp;→ </a></br>
+					</span>
+					<span>Heroku Product Manager DeVaris Brown and CLI Engineer Philipe Navarro show you how to get your startup’s product and engineering practices set up right from day one.</span>
 					<!-- </p> -->
 				</columns>
 			</row>
@@ -48,10 +45,11 @@ subject: Securing Data, Going Fast, and the Magic of Tidying Active Record
 			<!-- third article  -->
 			<row class="article">
 				<columns>
-					<h5>
-						<a href=""> {{ article headline here }} &nbsp;→ </a>
-					</h5>
-					<span>{{ description }}</span>
+					<span class="headline">
+						<href="">[Technical Session] The Life-Changing Magic of Tidying Active Record Allocations&nbsp;→
+							</a></br>
+					</span>
+					<span>Heroku Ruby Engineer Richard Schneeman shows you how to use memory profiling to keep only those Active Record objects that are necessary, useful, clean, and performant, so that your application sparks joy.</span>
 					<!-- </p> -->
 				</columns>
 			</row>
@@ -59,10 +57,10 @@ subject: Securing Data, Going Fast, and the Magic of Tidying Active Record
 			<!-- fourth article  -->
 			<row class="article">
 				<columns>
-					<h5>
-						<a href=""> {{ article headline here }} &nbsp;→ </a>
-					</h5>
-					<span>{{ description }}</span>
+					<span class="headline">
+						<href="">[Life Blog] Equality Through Accessibility&nbsp;→ </a></br>
+					</span>
+					<span>Learn why designing for accessibility is important to us, and why we encourage everyone to incorporate these design principles into their software design process.</span>
 					<!-- </p> -->
 				</columns>
 			</row>
@@ -70,10 +68,10 @@ subject: Securing Data, Going Fast, and the Magic of Tidying Active Record
 			<!-- fifth article  -->
 			<row class="article">
 				<columns>
-					<h5>
-						<a href=""> {{ article headline here }} &nbsp;→ </a>
-					</h5>
-					<span>{{ description }}</span>
+					<span class="headline">
+						<href="">[Engineering Blog] Designing for Accessibility: Contrast Ratio&nbsp;→ </a> </br>
+					</span>
+					<span>Read about our design and development process as we dive into contrast ratio as an aspect of advancing accessibility in the Heroku product.</span>
 					<!-- </p> -->
 				</columns>
 			</row>
@@ -81,10 +79,10 @@ subject: Securing Data, Going Fast, and the Magic of Tidying Active Record
 			<!-- sixth article  -->
 			<row class="article">
 				<columns>
-					<h5>
-						<a href=""> {{ article headline here }} &nbsp;→ </a>
-					</h5>
-					<span>{{ description }}</span>
+					<span class="headline">
+						<href="">Do More With, and Get More From, Your Data on Heroku&nbsp;→ </a></br>
+					</span>
+					<span>Learn more about building data-driven apps with Heroku Postgres, Heroku Redis, and Apache Kafka on Heroku.</span>
 					<!-- </p> -->
 				</columns>
 			</row>
@@ -92,19 +90,232 @@ subject: Securing Data, Going Fast, and the Magic of Tidying Active Record
 			<!-- seventh article  -->
 			<row class="article">
 				<columns>
-					<h5>
-						<a href=""> {{ article headline here }} &nbsp;→ </a>
-					</h5>
-					<span>{{ description }}</span>
+					<span class="headline">
+						<href="">[Webinar] Build Apps that Customers Love with Heroku + Salesforce&nbsp;→ </a></br>
+					</span>
+					<span>ReadHeroku syncs seamlessly with Salesforce, making it easier to build personalized apps using CRM data. Join our webinar to learn more, with special guest Cory Haber of Furnished Quarters, on <em>Wednesday, August 28th, 10am PDT.</em></span>
 					<!-- </p> -->
 				</columns>
 			</row>
 			<!-- end seventh article  -->
-		</container>
-	</wrapper>
+			<!-- End of articles -->
+			<!-- Start of may also enjoy -->
 
-	{{> footer}}
+			<!-- Changed this row class -->
+			<row class="section-title">
+				<columns>
+					<p class="text-center">
+						you may also enjoy
+					</p>
+				</columns>
+			</row>
+			<row class="secondary-stories">
+				<columns>
+					<h6 href=""> Trolls and Bots are Disrupting Social Media &mdash; Here's how AI can Stop Them&nbsp;→
+					</h6>
+				</columns>
+			</row>
+			<row class="secondary-stories">
+				<columns>
+					<h6 href="">Identifying Trolls and Bots on Reddit with Machine Learning &nbsp;→
+					</h6>
+				</columns>
+			</row>
+			<row class="secondary-stories">
+				<columns>
+					<h6 href="">The Surprising Portability of Heroku Apps&nbsp;→
+					</h6>
+				</columns>
+			</row>
+			<row class="secondary-stories">
+				<columns>
+					<h6 href=""> [Podcast] Attacking and Defending Kubernetes with Heroku’s Ian Coldwater on the Kubernetes Podcast from Google&nbsp;→
+					</h6>
+				</columns>
+			</row>
+			<row class="section-title">
+				<columns>
+					<p class="text-center">
+						ADD-ON MARKETPLACE </br> GENERALLY AVAILABLE ADD-ONS
+					</p>
+				</columns>
+			</row>
+			<row class="add-ons">
+				<columns>
+					<span class="headline">
+						<href="">ParrotQA &nbsp;→</a></br></span>
+					<span>Run your tests automatically every time you deploy to Heroku.</span>
+				</columns>
+			</row>
+			<row class="add-ons">
+				<columns>
+					<span class="headline">
+						<href="">Flight Formation→</a></br></span>
+					<span>Automatically schedule, scale, and restart your application.</span>
+				</columns>
+			</row>
+
+
+			<row class="section-title">
+				<columns>
+					<p class="text-center">
+						ADD-ON MARKETPLACE </br> BETA ADD-ONS
+					</p>
+				</columns>
+			</row>
+
+
+				<row class="add-ons">
+					<columns>
+						<span class="headline">
+							<href="">Advanced Scheduler &nbsp;→</a></br></span>
+						<span>Use a reliable and powerful task scheduling as a service.</span>
+					</columns>
+				</row>
+
+
+
+				<row class="add-ons">
+					<columns>
+						<span class="headline">
+							<href="">My V02&nbsp;→</a></br></span>
+						<span>Enable employees to sync timesheets and expenses to a Salesforce org.</span>
+					</columns>
+				</row>
+
+
+
+			<row class="section-title">
+				<columns>
+					<p class="text-center">
+						built on heroku
+					</p>
+				</columns>
+			</row>
+
+			<row class="add-ons">
+				<columns>
+					<span class="headline">
+					<href="">Dubsmash Chose to Re-Launch and Scale Its Service on Heroku&nbsp;→</a></br></span>
+					<span>Learn why Dubsmash renewed its investment in Heroku and build a highly scalable second generation video sharing service on the platform.</span>
+				</columns>
+			</row>
+
+			<row class="section-title">
+				<columns>
+					<p class="text-center">
+						upcoming events
+					</p>
+				</columns>
+			</row>
+
+			<row class="add-ons">
+				<columns>
+					<span class="headline"><href="">DevOpsDays&nbsp;→</a></br></span>
+					<span class="dates">August 27-28 - Chicago, IL</span></br>
+					<span>Heroku is a proud sponsor of DevOpsDays Chicago. The conference brings development, operations, QA, InfoSec, management, and leadership together to discuss the culture and tools that help make better organizations and products. The 2019 event will be the sixth time we have sponsored DevOpsDays Chicago, and it should be bigger and better than ever before!</span>
+				</columns>
+			</row>
+
+<row class="add-ons">
+	<columns>
+		<span class="headline"><href="">PostGresOpen&nbsp;→</a></br></span>
+		<span class="dates">September 11-13 Orlando, FL</span></br>
+		<span>Heroku is a proud sponsor of DevOpsDays Chicago. The conference brings development, operations, QA, InfoSec, management, and leadership together to discuss the culture and tools that help make better organizations and products. The 2019 event will be the sixth time we have sponsored DevOpsDays Chicago, and it should be bigger and better than ever before!</span>
+	</columns>
+</row>
+<row class="add-ons">
+	<columns>
+		<span class="headline"><href="">DjangoCon&nbsp;→</a></br></span>
+		<span class="dates">September 22-27 - San Diego, CA</span></br>
+		<span>Heroku is a proud sponsor of DevOpsDays Chicago. The conference brings development, operations, QA, InfoSec, management, and leadership together to discuss the culture and tools that help make better organizations and products. The 2019 event will be the sixth time we have sponsored DevOpsDays Chicago, and it should be bigger and better than ever before!</span>
+	</columns>
+</row>
+<row class="add-ons">
+	<columns>
+		<span class="headline"><href="">Strata Data Conference&nbsp;→</a></br></span>
+		<span class="dates">September 23-26 - New York, NY</span></br>
+		<span>Swing by the Heroku booth to meet with the Heroku data team and grab thoughtfully-designed Heroku swag. Strata Data Conference is where cutting-edge science and new business fundamentals intersect and merge. It's a deep dive into emerging techniques and technologies. You'll dissect case studies, develop new skills through in-depth tutorials, share emerging best practices in data science, and imagine the future.</span>
+	</columns>
+</row>
+
+<row class="section-title">
+	<columns>
+		<p class="text-center">
+			CODE[ISH] PODCASTS
+		</p>
+	</columns>
+</row>
+
+	<row class="add-ons">
+		<columns>
+			<span class="headline">
+				<href="">26. Connectivity in the Woods (July 23, 2019) →</a></br></span>
+			<span class="subheader">Zach Feldman tells us how Getaway has built fault-tolerant and responsive IoT systems that run in places without Internet and cellular connectivity. <href="">Listen&nbsp;→</a></href></span>
+		</columns>
+	</row>
+
+	<row class="add-ons">
+			<columns>
+				<span class="headline">
+					<href="">27. Behind the Brand with Heroku's Lead Designer (July 30, 2019)&nbsp;→</a></br></span>
+				<span class="subheader">Zach Feldman tells us how Getaway has built fault-tolerant and responsive IoT systems that run in places without Internet and cellular connectivity. <href="">Listen&nbsp;→</a></href></span>
+			</columns>
+	</row>
+
+	<row class="add-ons">
+			<columns>
+				<span class="headline">
+					<href="">28. Effective Leadership Development (August 6, 2019)&nbsp;→</a></br></span>
+				<span class="subheader">Zach Feldman tells us how Getaway has built fault-tolerant and responsive IoT systems that run in places without Internet and cellular connectivity. <href="">Listen&nbsp;→</a></href></span>
+			</columns>
+	</row>
+
+<row class="add-ons">
+		<columns>
+			<span class="headline">
+				<href="">29.Technology and Art (August 13, 2019)&nbsp;→</a></br></span>
+			<span class="subheader">Zach Feldman tells us how Getaway has built fault-tolerant and responsive IoT systems that run in places without Internet and cellular connectivity. <href="">Listen&nbsp;→</a></href></span>
+		</columns>
+</row>
+
+<row class="add-ons">
+		<columns>
+			<span class="headline">
+				<href="">30. The Infasctructure Behind Salesforce's Chatbots (August 20, 2019)&nbsp;→</a></br></span>
+			<span class="subheader">Zach Feldman tells us how Getaway has built fault-tolerant and responsive IoT systems that run in places without Internet and cellular connectivity. <href="">Listen&nbsp;→</a></href></span>
+		</columns>
+</row>
+
+<!-- <row class="section-title">
+	<columns>
+		<p class="text-center">
+____________________
+		</p>
+	</columns>
+</row> -->
+
+<hr class="small-hr" />
+
+<row class="last-content">
+	<columns>
+			<href src="">We're Hiring&nbsp;→</a></href></br>
+			Join a team that’s transforming how apps are built. <href src="">Come work with us&nbsp;→</a></href></br>
+	</columns>
+</row>
+
+<hr class="small-hr" />
+
+<row class="last-content">
+	<columns>
+			Take a couple of minutes and help us make the newsletter more valuable for you. <href src="">Complete this short survey&nbsp;→</a></href></br>
+	</columns>
+</row>
 
 </container>
 
-<spacer size="16"></spacer>
+		<spacer size="90"></spacer>
+
+{{> footer}}
+
+</wrapper>
